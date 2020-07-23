@@ -18,8 +18,14 @@
             <input type="email" name="email" id="email" class="form-control" placeholder="Email" required autofocus>
             <label for="inputPassword" class="sr-only">Пароль</label>
             <input type="password" name="password" id="password" class="form-control" placeholder="Ваш очень сложны пароль" required>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div id="captcha"></div>
+                </div>
+                <input type="text" class="form-control" name="captcha" placeholder="Captcha" id="cpatchaTextBox"/>
+            </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Вход</button>
-            <a href="/home/register">Регистрация</a>
+            <a class="text-center" href="/home/register">Регистрация</a>
         </form>
     </div>
 </div>

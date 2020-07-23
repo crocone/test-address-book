@@ -10,7 +10,7 @@
 <body>
 
 <div class="container">
-    <div class="text-center home-page">
+    <div class="home-page text-center">
         <form class="form-signin ajax-form" action="/api/register">
             <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
             <div class="form-group">
@@ -29,9 +29,15 @@
                 <label for="passwordConfirm" class="sr-only">Повторите пароль</label>
                 <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="Повторите пароль введенный выше" required>
             </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div id="captcha"></div>
+                </div>
+                <input type="text" class="form-control" name="captcha" placeholder="Captcha" id="cpatchaTextBox"/>
+            </div>
             <div class="form-group">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Регистрация</button>
-                <a href="/">Авторизация</a>
+                <a  href="/">Авторизация</a>
         </form>
     </div>
 </div>
