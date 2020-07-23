@@ -1,5 +1,5 @@
 /* global $ */
-const API_HOST = 'http://book.localhost/api';
+const API_HOST = '/api';
 const USER_ACCESS_TOKEN = $.session.get('access_token') ? $.session.get('access_token') : null;
 const API_GET_CONTACTS = `${API_HOST}/contacts?access-token=${USER_ACCESS_TOKEN}`;
 const API_GET_CONTACT = `${API_HOST}/contact?access-token=${USER_ACCESS_TOKEN}`;
