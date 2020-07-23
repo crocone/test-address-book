@@ -1,0 +1,3 @@
+<?php
+    $scripts = ['admin.js']
+?>

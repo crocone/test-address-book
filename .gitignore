@@ -1,0 +1,7 @@
+/vendor/
+/tmp/*
+/config/db.php
+.phpcs-cache
+*.cache
+.idea
+/public/storage
