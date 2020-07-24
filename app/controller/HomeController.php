@@ -20,9 +20,9 @@ class HomeController extends AbstractController
      */
 
     public function index(){
-        return $this->renderPartial('home/index.php');
+        return $this->renderPartial('home/index.php',['title' => 'Авторизация']);
     }
     public function register(){
-        return $this->renderPartial('home/register.php');
+        return $this->renderPartial('home/register.php', ['title' => 'Регистрация']);
     }
 }

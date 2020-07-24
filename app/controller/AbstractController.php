@@ -36,6 +36,7 @@ abstract class AbstractController
 
     function render($file, $variables = array()) {
         $variables['action'] = $this->action;
+        $variables['title'] = isset($variables['title']) ? $variables['title'] : 'Тестовый проект';
         $variables['isAdmin'] = isset( $this->user['is_admin']) ? $this->user['is_admin'] : false;
         extract($variables);
         ob_start();
